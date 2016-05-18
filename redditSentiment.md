@@ -37,9 +37,8 @@ I explored the data by:
 
 ##### Word frequency plots
 
-General word frequency hist            |  Specific word frequency hist
-:-------------------------:|:-------------------------:
-![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/gwf.png)  |  ![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png)
+
+  <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/gwf.png" alt="The Pulpit Rock" width="49%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png" alt="The Pulpit Rock" width="49%", align = "middle">
 
 My next task was to determine whether any of these metric correlated with upvotes. Below are a few graphs displaying these metrics on all the comments.
 
