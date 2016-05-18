@@ -37,21 +37,21 @@ I explored the data by:
 
 ##### Word frequency plots
 
-general word frequency hist            |  specific word frequency hist
+General word frequency hist            |  Specific word frequency hist
 :-------------------------:|:-------------------------:
 ![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/gwf.png)  |  ![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png)
 
 My next task was to determine whether any of these metric correlated with upvotes. Below are a few graphs displaying these metrics on all the comments.
 
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/tUpvotes.png)
+Total upvotes for all posts about the entity            |  Proportion of number of posts to upvotes 
+:-------------------------:|:-------------------------:
+![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/tUpvotes.png)  |  ![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/prop.png)
 
 It is interesting to note that although people have mentioned "internet" and "government" most frequently, those posts don't seem to have garnered many votes. On the other hand, posts or comments mentioning companies have more upvotes. This could be because they express an opinion about the company that others relate to.
 
 *"give eg."*
 
 Next is to see how the upvotes are distributed. The bar graph shows the percentage of upvotes proportional to the total number of posts containing the keywords given on the x-axis.
-
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/prop.png)
 
 Both number of posts and number of upvotes have been normalized to the range(0,1) for easy comparison. "google" has nearly equal proportion of posts and upvotes. "reddit" has the least number of posts and "government" has the least upvotes. This confirms my earlier suspicion that people donn't upvote texts containing generic words. It can be seen from the yellow histogram that "reddit" is the second least frequent word, yet text containing it is the 4th highest upvoted.
 
