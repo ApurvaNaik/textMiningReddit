@@ -36,12 +36,10 @@ I explored the data by:
 2. Filtering data by most talked about entities (unique words).
 
 ##### Word frequency plots
-*general word frequency hist*
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/gwf.png)
 
-*specific word frequency hist*
-
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png)
+general word frequency hist            |  specific word frequency hist
+:-------------------------:|:-------------------------:
+![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/gwf.png)  |  ![](https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png)
 
 My next task was to determine whether any of these metric correlated with upvotes. Below are a few graphs displaying these metrics on all the comments.
 
