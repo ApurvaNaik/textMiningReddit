@@ -37,9 +37,7 @@ The wordcloud shown at the head of this page is plotted from the entire corpus o
   <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png" alt="entity frequency" width="50%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/tUpvotes.png" alt="general word frequency" width="50%", align = "middle">
 
 It is interesting that people have mentioned "internet" and "government" most frequently yet, those posts are not the most upvoted. On the other hand, posts or comments mentioning companies have more upvotes. One explanation could be, because these posts express an opinion about the company that others relate to.
-```
-for eg.
-```
+
 Next, I correlated upvotes with the number of posts containing the keywords. This gave me an idea which keywords among others elicited the most response. Both number of posts and number of upvotes have been scaled to the range(0,1) for easy comparison.
 
 ![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/prop.png)
