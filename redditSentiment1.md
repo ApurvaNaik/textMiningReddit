@@ -29,6 +29,7 @@ I then cleaned punctuation, digits and whitespace, lowercased words, and removed
 ##### Word frequency plots
 
 The wordcloud shown at the head of this page is plotted from the entire corpus of posts and comments parsed from r/technology. The "name entities"  are apparent once we look past the high frequency generic words. I also wanted to investigate how the upvotes correlate with the keywords.
+
   <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png" alt="entity frequency" width="50%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/tUpvotes.png" alt="general word frequency" width="50%", align = "middle">
 
 It is interesting that people have mentioned "internet" and "government" most frequently yet, those posts are not the most upvoted. On the other hand, posts or comments mentioning companies have more upvotes. One explanation could be, because these posts express an opinion about the company that others relate to.
@@ -58,14 +59,10 @@ I chose to analyze text containing the keywords "google", "apple" "comcast" and 
 
 ##### Average Sentiment
 
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/boxplot.png)
+<img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/boxplot.png" alt="entity frequency" width="50%", align = "middle"><img src="github.com/ApurvaNaik/textMiningReddit/raw/master/meanSenti.png" alt="entity frequency" width="50%", align = "middle">
 
-The dark blue points show the very positive and negative sentiment scores. The light blue ones highlight where the popular opinion lies. It is apparent that comcast and opinion elicit some extreme opinions, where as popular opinion about google and encryption (to some extent) is more balanced.
 
-Plotting the mean sentiment score:
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/meanSenti.png)
-
-As you can tell, Google gets the most positive sentiment while Comcast gets the least.
+The dark blue points on the boxplot show the very positive and negative sentiment scores. The light blue ones highlight where the popular opinion lies. It is apparent that comcast and opinion elicit some extreme opinions, where as popular opinion about google and encryption (to some extent) is more balanced. Plotting the mean sentiment score you can see Google gets the most positive sentiment while Comcast gets the least.
 
 Visualizing very positive and very negative sentiment:
 
