@@ -67,32 +67,19 @@ Plotting the mean sentiment score:
 
 As you can tell, Google gets the most positive sentiment while Comcast gets the least.
 
-Visualizing very positive and very negative sentiment:
+#### Reddit hates Comcast
 
-<img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/very_pos.png" alt="entity frequency" width="50%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/very_neg.png" alt="general word frequency" width="50%", align = "middle">
+Being a seasoned redditor, I'm not surprised to find Comcast bearing the brunt of the community's wrath. What I did find surprising was comcast getting some of the most positive scores
 
-I'm a little surprised to see comcast get both most positive and most negative sentiment especially because it is the least popular. There's definitely a story here, so I went back to the scores and traced the text that got the highest positive scores. I found two texts
+
+There's definitely a story here, so I went back to the scores and traced the texts that got the highest positive scores. I found two texts
 ```
-dear comcast
-enjoy it while you can comcast.
+"dear comcast"
+"enjoy it while you can comcast."
 ```
-This example highlights the drawback of the model: It cannot detect sarcasm.
+Now I know what happened! The model could not detect sarcasm.
 
-
-
-
-
-
-
-Is reddit full of skeptics? At least the results of my analysis say so. One one hand its possible that the negative sentiment is directed not necessarily towards the entity, but towards another:
-```
-"about a month ago i spent an hour or so getting all the extra garbage toolbars and crap avg installed off my system ... avg installed a boatload of crapware. it kept reinstalling itself. google rescued me"
-```
-Here, the negative sentiment is about avg, not google. Yet this has been classified as a negative sentiment with a score of -0.02. It is one of the drawbacks of using a Bayes classifier.
-
-*__Note:__ This can be resolved to some extent by collecting more data to even out the bias and by analysing not just words but combination of 2 or 3 words. It would also be interesting to demonstrate juxtaposition analysis: finding which entities co-occur with, say google or apple.*
-
-##### More wordclouds
+#### More wordclouds
 
 *Google*
 ![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/googleWC.png)
@@ -104,7 +91,7 @@ Here, the negative sentiment is about avg, not google. Yet this has been classif
 ![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/encryptionWC.png)
 
 
-#### Time analysis
-I was interested to know if r/technology has been talking about anything different in the past month.
+#### Concluding Remarks
+Parsing comments from Reddit and analyzing them was really fun. r/technology loves talking about Google, Apple, encryption and Comcast. It loves Apple for taking a stand for encryption and hates Comcast unconditionally. Google appears more in a search engine context than as a company.
 
-*Comparison of wordcloud for comments over the past year and past month*
+In the future I would love to analyze not just single words but combination of 2 or 3 words. It would also be interesting to do some juxtaposition analysis: finding which entities co-occur with, each other and how popular opinion shifts in such situations.
