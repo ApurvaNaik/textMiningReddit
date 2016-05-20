@@ -4,13 +4,17 @@
 ### About Reddit
 Wikipedia defines Reddit as
 ```
- a social news and entertainment website where registered users submit content in the form of links or text posts. Users then vote each submission "up" or "down" to rank the post and determine its position on the site's pages. Content entries are organized by areas of interest called "subreddits".
+ a social news and entertainment website where registered users submit content in the form of links or text posts. 
+ Users then vote each submission "up" or "down" to rank the post and determine its position on the site's pages. 
+ Content entries are organized by areas of interest called "subreddits".
 ```
  According to their statistics [here](https://www.reddit.com/about), Reddit receives over 7 billion page views from 227 million unique visitors a month. Further, these users vote 22 million times each day. This makes Reddit a great platform for social analysis.
 
  In order to narrow it down to one subreddit, I went over to [redditmetrics.com](http://redditmetrics.com/top) to make my selection. I chose r/technology with more that 5 million subscribers. There is a nice summary posted on their [home page](https://www.reddit.com/r/technology/) about what r/technology is about.
  ```
- r/technology is a place to share and discuss the latest developments, happenings and curiosities in the world of technology; a broad spectrum of conversation as to the innovations, aspirations, applications and machinations that define our age and shape our future.
+ r/technology is a place to share and discuss the latest developments, happenings and curiosities in the world of 
+ technology;  a broad spectrum of conversation as to the innovations, aspirations, applications and machinations 
+ that define our age and shape our future.
 ```
 
  I am interested in knowing what the hivemind at r/technology discusses, what it loves, and hates. I want to know tickles this fickle monster.
@@ -42,16 +46,21 @@ Next, I correlated upvotes with the number of posts containing the keywords. Thi
 
  **google** has nearly equal proportion of posts and upvotes. __reddit__ has the least number of posts and __government__ has the least upvotes. This confirms my earlier suspicion that people don't upvote texts containing generic words. From the yellow histogram, its seen that __reddit__ is the second least frequent word, yet text containing it is the 4th highest upvoted. This probably indicates reddit co-occurs with another more voted keyword.
  ```
- "...the only good thing about comcast is since they're in the news and on the front page of reddit so often that i have constant reminders to pay my bill."
+ "...the only good thing about comcast is since they're in the news and on the front page of reddit so often that i
+ have constant reminders to pay my bill."
 
-"reddit's it's awesome.  they love that apple is fighting to encrypt phones, but then when they find out it can inconvenience them they grab the pitchforks."
+"reddit's it's awesome.  they love that apple is fighting to encrypt phones, but then when they find out it can 
+inconvenience them they grab the pitchforks."
  ```
 
 ### Quick and dirty sentiment analysis
 Now that I know what the technology community at Reddit is talking about, I'm interested to know their opinion. There are a number of ways of doing this, varying in complexity. For this analysis, I've used the bag-of-words model.
 
 ```
-In the bag-of-words feature, the text to be analyzed is literally shred into individual words (called tokens) and collected in a "bag of words". The Naive Bayes Classifier then compares words in this bag to those in two other bags labeled "Positive" and "Negative". The words in our bag are then labeled positive or negative, thus implying the sentiment.
+In the bag-of-words feature, the text to be analyzed is literally shred into individual words (called tokens) 
+and collected in a "bag of words". The Naive Bayes Classifier then compares words in this bag to those in two 
+other bags labeled "Positive" and "Negative". The words in our bag are then labeled positive or negative, thus 
+implying the sentiment.
 ```
 The {tm.sentiment.plugin} package in R is well suited for this purpose. In addition to sentiment score it also outputs __polarity__ (is the sentiment associated positive or negative?) and __subjectivity__ (how much sentiment does the entity garner?) scores.
 
