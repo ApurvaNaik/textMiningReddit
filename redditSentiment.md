@@ -36,7 +36,7 @@ It is interesting that people have mentioned "internet" and "government" most fr
 
 ##### Correlating upvotes to submissions
 
-<img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/prop.png" alt="general word frequency" width="50%", align = "right">
+<img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/uProp.png" alt="general word frequency" width="50%", align = "right">
 
 I correlated upvotes with the number of posts containing the keywords (*I will refer to name entities as keywords now on*). This gave me an idea which keywords among others elicited the most response. Both number of posts and number of upvotes have been scaled to the range(0,1) for easy comparison.
 
