@@ -30,7 +30,7 @@ I then cleaned punctuation, digits and whitespace, lowercased words, and removed
 
 The wordcloud shown at the head of this page is plotted from the entire corpus of posts and comments parsed from r/technology. The "name entities"  are apparent once we look past the high frequency generic words. These are apparent in the first histogram. The second histogram shows how the upvotes correlate with the name entities.
 
-  <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/ewf.png" alt="entity frequency" width="50%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/tUpvotes.png" alt="general word frequency" width="50%", align = "middle">
+  <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/ewf.png" alt="entity frequency" width="50%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/upvote.png" alt="general word frequency" width="50%", align = "middle">
 
 It is interesting that people have mentioned "internet" and "government" most frequently yet, those posts are not the most upvoted. On the other hand, posts or comments mentioning brands have more upvotes, probably because these posts express an opinion about the brand that others relate to.
 
@@ -39,14 +39,14 @@ It is interesting that people have mentioned "internet" and "government" most fr
 <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/prop.png" alt="general word frequency" width="50%", align = "right">
 
 I correlated upvotes with the number of posts containing the keywords (*I will refer to name entities as keywords now on*). This gave me an idea which keywords among others elicited the most response. Both number of posts and number of upvotes have been scaled to the range(0,1) for easy comparison.
- 
+
  "google" and "comcast" has nearly equal proportion of posts and upvotes. "reddit" is mentioned the least number of times whereas "government" and "internet" got the least upvotes. This confirms my suspicion that people don't upvote texts containing generic words. From the yellow histogram, its seen that "reddit" is the second least frequent word, yet text containing it is the 4th highest upvoted. This probably indicates reddit co-occurs with another more voted keyword
- 
+
  ```
- "...the only good thing about comcast is since they're in the news and on the front page of reddit so often 
+ "...the only good thing about comcast is since they're in the news and on the front page of reddit so often
  that i have constant reminders to pay my bill."
 
-"reddit is awesome.  they love that apple is fighting to encrypt phones, but then when they find out it can 
+"reddit is awesome.  they love that apple is fighting to encrypt phones, but then when they find out it can
 inconvenience them they grab the pitchforks."
  ```
 
