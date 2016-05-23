@@ -1,5 +1,5 @@
 ## Text mining Reddit
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/686298c6717d01bfa2c0d83814f211bbbce47982/wc3.png)
+![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/wc2.png)
 
 ### About Reddit
 Wikipedia defines Reddit as
@@ -29,7 +29,7 @@ I then cleaned punctuation, digits and whitespace, lowercased words, and removed
 ##### Word frequency plots
 
 The wordcloud shown at the head of this page is plotted from the entire corpus of posts and comments parsed from r/technology. The "name entities"  are apparent once we look past the high frequency generic words. I also wanted to investigate how the upvotes correlate with the keywords.
-  <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/ewf.png" alt="entity frequency" width="50%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/tUpvotes.png" alt="general word frequency" width="50%", align = "middle">
+  <img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/ewf.png" alt="entity frequency" width="50%", align = "middle"><img src="https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/tUpvotes.png" alt="general word frequency" width="50%", align = "middle">
 
 It is interesting that people have mentioned "internet" and "government" most frequently yet, those posts are not the most upvoted. On the other hand, posts or comments mentioning companies have more upvotes. One explanation could be, because these posts express an opinion about the company that others relate to.
 ```
@@ -37,7 +37,7 @@ for eg.
 ```
 Next, I correlated upvotes with the number of posts containing the keywords. This gave me an idea which keywords among others elicited the most response. Both number of posts and number of upvotes have been scaled to the range(0,1) for easy comparison.
 
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/prop.png)
+![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/prop.png)
 
  **google** has nearly equal proportion of posts and upvotes. __reddit__ has the least number of posts and __government__ has the least upvotes. This confirms my earlier suspicion that people don't upvote texts containing generic words. From the yellow histogram, its seen that __reddit__ is the second least frequent word, yet text containing it is the 4th highest upvoted. This probably indicates reddit co-occurs with another more voted keyword.
  ```
@@ -58,12 +58,12 @@ I chose to analyze text containing the keywords "google", "apple" "comcast" and 
 
 ##### Average Sentiment
 
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/boxplot.png)
+![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/boxplot.png)
 
 The dark blue points show the very positive and negative sentiment scores. The light blue ones highlight where the popular opinion lies. It is apparent that comcast and opinion elicit some extreme opinions, where as popular opinion about google and encryption (to some extent) is more balanced.
 
 Plotting the mean sentiment score:
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/meanSenti.png)
+![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/meanSenti.png)
 
 As you can tell, Google gets the most positive sentiment while Comcast gets the least.
 
@@ -82,13 +82,13 @@ Now I know what happened! The model could not detect sarcasm.
 #### More wordclouds
 
 *Google*
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/googleWC.png)
+![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/googleWC.png)
 
 *Apple*
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/appleWC.png)
+![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/appleWC.png)
 
 *encryption*
-![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/encryptionWC.png)
+![Alt text](https://github.com/ApurvaNaik/textMiningReddit/raw/master/img/encryptionWC.png)
 
 
 #### Concluding Remarks
