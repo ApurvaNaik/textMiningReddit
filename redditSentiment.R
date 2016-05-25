@@ -10,7 +10,7 @@ library(scales) # brewer_pal
 library(reshape2) # melt function
 library(RCurl) # pull .csv from url
 
-link = "https://raw.githubusercontent.com/ApurvaNaik/Firefly-observations-Data-Analysis/master/data/firefly.data1.csv"
+link = "https://github.com/ApurvaNaik/textMiningReddit/blob/master/data/comments_technology_none.txt"
 x = getURL(link)
 data = readLines(textConnection(x))
 
@@ -68,7 +68,7 @@ p + theme(axis.line=element_blank(),axis.text.y=element_blank(),axis.ticks=eleme
 dev.off()
 
 # read csv file
-link = "https://raw.githubusercontent.com/ApurvaNaik/Firefly-observations-Data-Analysis/master/data/firefly.data1.csv"
+link = "https://github.com/ApurvaNaik/textMiningReddit/blob/master/data/comments_technology_none.csv"
 y = getURL(link)
 data.csv = read.csv(textConnection(y), header = F, stringsAsFactors = F)
 data.csv = as.data.frame(data.csv)
