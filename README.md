@@ -13,5 +13,5 @@ fork word_cloud repository from [here](https://github.com/ApurvaNaik/word_cloud)
 
 save the __myWC__ folder inside __word_cloud__ and generate wordclouds from the included text corpus.
 
-## sentiment analysis
+## Sentiment analysis
 refer __redditSentiment.R__
